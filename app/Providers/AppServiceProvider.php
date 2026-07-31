@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Repositories\Contracts\AuthRepositoryInterface;
 use App\Repositories\Eloquent\AuthRepository;
+use App\Repositories\Contracts\AuthRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
