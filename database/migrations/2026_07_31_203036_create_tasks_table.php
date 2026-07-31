@@ -13,7 +13,22 @@ return new class extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('project_id')
+                ->constrained()
+                ->cascadeOnDelete();
+            $table->string('title');
+            $table->text('description')->nullable();
+            $table->string('priority')
+                ->default(TaskPriority::MEDIUM->value);
+            $table->string('status')
+                ->default(TaskStatus::TODO->value);
+            $table->date('due_date')->nullable();
+            $table->softDeletes();
             $table->timestamps();
+            $table->index('status');
+            $table->index('priority');
+            $table->index('due_date');
+            $table->index('project_id');
         });
     }
 
