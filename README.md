@@ -254,6 +254,19 @@ Model
 
 ---
 
+## Background Job Flow
+
+Scheduler
+    ↓
+CheckOverdueTasksCommand
+    ↓
+SendOverdueTaskNotificationJob
+    ↓
+TaskOverdueNotification
+
+This ensures that overdue task notifications are processed asynchronously without affecting API response time.
+
+---
 # Author
 
 Ahmed Yousry
