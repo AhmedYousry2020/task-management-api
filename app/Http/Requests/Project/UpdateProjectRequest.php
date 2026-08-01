@@ -2,8 +2,10 @@
 
 namespace App\Http\Requests\Project;
 
+use App\Enums\ProjectStatus;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\Enum;
 
 class UpdateProjectRequest extends FormRequest
 {
@@ -12,7 +14,7 @@ class UpdateProjectRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,7 +25,21 @@ class UpdateProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+              'name' => [
+                'sometimes',
+                'string',
+                'max:255',
+            ],
+
+            'description' => [
+                'nullable',
+                'string',
+            ],
+
+            'status' => [
+                'sometimes',
+                new Enum(ProjectStatus::class),
+            ],
         ];
     }
 }

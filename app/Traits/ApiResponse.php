@@ -21,13 +21,21 @@ trait ApiResponse
     }
 
     protected function successPaginated(
-        LengthAwarePaginator $paginator,
+        mixed $paginator,
         string $message = 'Success'
     ): JsonResponse {
+        $items = $paginator instanceof \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+            ? $paginator->resolve()
+            : $paginator->items();
+
+        $paginator = $paginator instanceof \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+            ? $paginator->resource
+            : $paginator;
+
         return response()->json([
             'success' => true,
             'message' => $message,
-            'data' => $paginator->items(),
+            'data' => $items,
             'meta' => [
                 'current_page' => $paginator->currentPage(),
                 'last_page' => $paginator->lastPage(),
