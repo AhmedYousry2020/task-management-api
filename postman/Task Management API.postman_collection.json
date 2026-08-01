@@ -1,0 +1,2139 @@
+{
+  "info": {
+    "_postman_id": "529e7c1a-29f7-4e80-93dd-b5d5abb5dc5a",
+    "name": "Task Management API",
+    "description": "Postman collection containing authentication endpoints defined in routes/api.php",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12014549",
+    "_collection_link": "https://go.postman.co/collection/12014549-529e7c1a-29f7-4e80-93dd-b5d5abb5dc5a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "ahmed",
+                  "type": "text",
+                  "uuid": "72fb53ee-783a-4b50-96eb-43a17f0c2407"
+                },
+                {
+                  "key": "email",
+                  "value": "ahmed.yousry@gmail.com",
+                  "type": "text",
+                  "uuid": "3e3c62d0-f0cc-4903-b876-281b28ba145e"
+                },
+                {
+                  "key": "password",
+                  "value": "A159951A",
+                  "type": "text",
+                  "uuid": "483a6fd4-d47a-46cb-8008-0dbe0cdfc9ec"
+                },
+                {
+                  "key": "password_confirmation",
+                  "value": "A159951A",
+                  "type": "text",
+                  "uuid": "1a843beb-1b5e-4582-821e-261cb259708a"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/register",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "register"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Register",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "name",
+                      "value": "ahmed",
+                      "type": "text",
+                      "uuid": "72fb53ee-783a-4b50-96eb-43a17f0c2407"
+                    },
+                    {
+                      "key": "email",
+                      "value": "ahmed.yousry@gmail.com",
+                      "type": "text",
+                      "uuid": "3e3c62d0-f0cc-4903-b876-281b28ba145e"
+                    },
+                    {
+                      "key": "password",
+                      "value": "A159951A",
+                      "type": "text",
+                      "uuid": "483a6fd4-d47a-46cb-8008-0dbe0cdfc9ec"
+                    },
+                    {
+                      "key": "password_confirmation",
+                      "value": "A159951A",
+                      "type": "text",
+                      "uuid": "1a843beb-1b5e-4582-821e-261cb259708a"
+                    }
+                  ],
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/register",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "register"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:24:34 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:24:34 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Registered Successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"ahmed\",\n        \"email\": \"ahmed.yousry@gmail.com\",\n        \"created_at\": \"2026-07-31T22:24:33.000000Z\"\n    },\n    \"token\": \"1|qCe6GyoLb9xzjqOGQo47DoUeBmwRmCfbsMIt9UmMf27f20ea\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "test@example.com",
+                  "type": "text",
+                  "uuid": "97eba1af-7f59-41f5-912d-9c2adff733f7"
+                },
+                {
+                  "key": "password",
+                  "value": "password",
+                  "type": "text",
+                  "uuid": "b2b40ba2-3d78-49a4-be90-924436269063"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/login",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Login",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "ahmed.yousry@gmail.com",
+                      "type": "text",
+                      "uuid": "97eba1af-7f59-41f5-912d-9c2adff733f7"
+                    },
+                    {
+                      "key": "password",
+                      "value": "A159951A",
+                      "type": "text",
+                      "uuid": "b2b40ba2-3d78-49a4-be90-924436269063"
+                    }
+                  ],
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/login",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "login"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:27:17 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:27:17 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Login Successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"ahmed\",\n        \"email\": \"ahmed.yousry@gmail.com\",\n        \"created_at\": \"2026-07-31T22:24:33.000000Z\"\n    },\n    \"token\": \"2|pF3vbzGkNacBQpfw1Dj87PCOsZjUl4wghWUQbOIP0a6b7ac5\"\n}"
+            },
+            {
+              "name": "Login",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "test@example.com",
+                      "type": "text",
+                      "uuid": "97eba1af-7f59-41f5-912d-9c2adff733f7"
+                    },
+                    {
+                      "key": "password",
+                      "value": "password",
+                      "type": "text",
+                      "uuid": "b2b40ba2-3d78-49a4-be90-924436269063"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/login",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "login"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 16:08:00 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 16:08:00 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Login Successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Test User\",\n        \"email\": \"test@example.com\",\n        \"created_at\": \"2026-08-01T16:05:23.000000Z\"\n    },\n    \"token\": \"1|cF4MWzntsbiHbegfJO35K3KQ83IoPDzotZbpjM26ce1f7244\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/logout",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "logout"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Logout",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/logout",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "logout"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:28:00 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:28:00 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Logout Successfully\",\n    \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Dashboard (Home)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/dashboard",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "dashboard"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Dashboard (Home)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/dashboard",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "dashboard"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:52:27 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:52:27 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Dashboard retrieved successfully.\",\n    \"data\": {\n        \"total_projects\": 4,\n        \"active_projects\": 4,\n        \"total_tasks\": 1,\n        \"completed_tasks\": 0,\n        \"pending_tasks\": 1,\n        \"overdue_tasks\": 0\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "item": [
+        {
+          "name": "Create Project",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "todo project",
+                  "type": "text",
+                  "uuid": "3390ca01-4738-462b-816f-4b98e3cd2840"
+                },
+                {
+                  "key": "description",
+                  "value": "project description",
+                  "type": "text",
+                  "uuid": "18c05db7-a680-4bb4-beef-ed861780438c"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/projects",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "projects"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Project",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "name",
+                      "value": "todo project",
+                      "type": "text",
+                      "uuid": "3390ca01-4738-462b-816f-4b98e3cd2840"
+                    },
+                    {
+                      "key": "description",
+                      "value": "project description",
+                      "type": "text",
+                      "uuid": "18c05db7-a680-4bb4-beef-ed861780438c"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/projects",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "projects"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:53:14 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:53:14 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Project created successfully.\",\n    \"data\": {\n        \"id\": 4,\n        \"name\": \"todo project\",\n        \"description\": \"project description\",\n        \"status\": \"active\",\n        \"created_at\": \"2026-07-31T22:53:14.000000Z\",\n        \"updated_at\": \"2026-07-31T22:53:14.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "List Projects",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/projects",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "projects"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List Projects",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/projects",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "projects"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:55:58 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:55:58 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Projects retrieved successfully.\",\n    \"data\": [\n        {\n            \"id\": 4,\n            \"name\": \"todo project\",\n            \"description\": \"project description\",\n            \"status\": \"active\",\n            \"created_at\": \"2026-07-31T22:53:14.000000Z\",\n            \"updated_at\": \"2026-07-31T22:53:14.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"todo project\",\n            \"description\": \"project description\",\n            \"status\": \"active\",\n            \"created_at\": \"2026-07-31T22:50:37.000000Z\",\n            \"updated_at\": \"2026-07-31T22:50:37.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"todo project\",\n            \"description\": \"project description\",\n            \"status\": \"active\",\n            \"created_at\": \"2026-07-31T22:50:10.000000Z\",\n            \"updated_at\": \"2026-07-31T22:50:10.000000Z\"\n        },\n        {\n            \"id\": 1,\n            \"name\": \"todo project\",\n            \"description\": \"project description\",\n            \"status\": \"active\",\n            \"created_at\": \"2026-07-31T22:48:47.000000Z\",\n            \"updated_at\": \"2026-07-31T22:48:47.000000Z\"\n        }\n    ],\n    \"meta\": {\n        \"current_page\": 1,\n        \"last_page\": 1,\n        \"per_page\": 10,\n        \"total\": 4,\n        \"from\": 1,\n        \"to\": 4\n    },\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/v1/projects?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/v1/projects?page=1\",\n        \"prev\": null,\n        \"next\": null\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "View Project",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/projects/:project_id",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "projects",
+                ":project_id"
+              ],
+              "variable": [
+                {
+                  "key": "project_id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "View Project",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/projects/:project_id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "projects",
+                    ":project_id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "project_id",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:57:31 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 22:57:31 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Project retrieved successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"todo project\",\n        \"description\": \"project description\",\n        \"status\": \"active\",\n        \"created_at\": \"2026-07-31T22:48:47.000000Z\",\n        \"updated_at\": \"2026-07-31T22:48:47.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Project",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "todeo project updated",
+                  "type": "text",
+                  "uuid": "a3e256e1-37b3-4382-8e4d-2cea67c8d80f"
+                },
+                {
+                  "key": "_method",
+                  "value": "PUT",
+                  "type": "text",
+                  "uuid": "a225a936-ef42-4a0a-8f48-9cc788ffc846"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/projects/:project_id",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "projects",
+                ":project_id"
+              ],
+              "variable": [
+                {
+                  "key": "project_id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Update Project",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "name",
+                      "value": "todeo project updated",
+                      "type": "text",
+                      "uuid": "a3e256e1-37b3-4382-8e4d-2cea67c8d80f"
+                    },
+                    {
+                      "key": "_method",
+                      "value": "PUT",
+                      "type": "text",
+                      "uuid": "a225a936-ef42-4a0a-8f48-9cc788ffc846"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/projects/:project_id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "projects",
+                    ":project_id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "project_id",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 23:03:08 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 23:03:08 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Project updated successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"todeo project updated\",\n        \"description\": \"project description\",\n        \"status\": \"active\",\n        \"created_at\": \"2026-07-31T22:48:47.000000Z\",\n        \"updated_at\": \"2026-07-31T23:03:08.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Project",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/projects/:project_id",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "projects",
+                ":project_id"
+              ],
+              "variable": [
+                {
+                  "key": "project_id",
+                  "value": "4"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Project",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/projects/:project_id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "projects",
+                    ":project_id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "project_id",
+                      "value": "4"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 23:05:09 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 Jul 2026 23:05:09 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Project deleted successfully.\",\n    \"data\": null\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tasks",
+      "item": [
+        {
+          "name": "Create Task",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "project_id",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "a3e256e1-37b3-4382-8e4d-2cea67c8d80f"
+                },
+                {
+                  "key": "title",
+                  "value": "Finish Assessment",
+                  "type": "text",
+                  "uuid": "a225a936-ef42-4a0a-8f48-9cc788ffc846"
+                },
+                {
+                  "key": "description",
+                  "value": "Laravel assessment",
+                  "type": "text",
+                  "uuid": "4a8a31d1-6990-494c-accc-cbe2099a2f88"
+                },
+                {
+                  "key": "priority",
+                  "value": "medium",
+                  "type": "text",
+                  "uuid": "bbc3584d-687c-4b3e-9f83-c736fcd0f1e1"
+                },
+                {
+                  "key": "status",
+                  "value": "todo",
+                  "type": "text",
+                  "uuid": "bd61bb0c-a84a-4df2-b0ce-7107da73d6b9"
+                },
+                {
+                  "key": "due_date",
+                  "value": "2026-08-01",
+                  "type": "text",
+                  "uuid": "572791ca-5d23-4adb-b6bd-ef16412a0959"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/tasks",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tasks"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Task",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "project_id",
+                      "value": "1",
+                      "type": "text",
+                      "uuid": "a3e256e1-37b3-4382-8e4d-2cea67c8d80f"
+                    },
+                    {
+                      "key": "title",
+                      "value": "Finish Assessment",
+                      "type": "text",
+                      "uuid": "a225a936-ef42-4a0a-8f48-9cc788ffc846"
+                    },
+                    {
+                      "key": "description",
+                      "value": "Laravel assessment",
+                      "type": "text",
+                      "uuid": "4a8a31d1-6990-494c-accc-cbe2099a2f88"
+                    },
+                    {
+                      "key": "priority",
+                      "value": "medium",
+                      "type": "text",
+                      "uuid": "bbc3584d-687c-4b3e-9f83-c736fcd0f1e1"
+                    },
+                    {
+                      "key": "status",
+                      "value": "todo",
+                      "type": "text",
+                      "uuid": "bd61bb0c-a84a-4df2-b0ce-7107da73d6b9"
+                    },
+                    {
+                      "key": "due_date",
+                      "value": "2026-08-01",
+                      "type": "text",
+                      "uuid": "572791ca-5d23-4adb-b6bd-ef16412a0959"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/tasks",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "tasks"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:28:06 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:28:06 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Task created successfully.\",\n    \"data\": {\n        \"id\": 2,\n        \"project_id\": \"1\",\n        \"title\": \"Finish Assessment\",\n        \"description\": \"Laravel assessment\",\n        \"priority\": \"medium\",\n        \"status\": \"todo\",\n        \"due_date\": \"2026-08-01T00:00:00.000000Z\",\n        \"created_at\": \"2026-08-01T15:28:06.000000Z\",\n        \"updated_at\": \"2026-08-01T15:28:06.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "List Tasks",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/tasks",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tasks"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List Tasks",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/tasks",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "tasks"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:28:54 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:28:54 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Tasks retrieved successfully.\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"project_id\": 1,\n            \"title\": \"Finish Assessment\",\n            \"description\": \"Laravel assessment\",\n            \"priority\": \"medium\",\n            \"status\": \"todo\",\n            \"due_date\": \"2026-08-01T00:00:00.000000Z\",\n            \"created_at\": \"2026-08-01T15:28:06.000000Z\",\n            \"updated_at\": \"2026-08-01T15:28:06.000000Z\"\n        },\n        {\n            \"id\": 1,\n            \"project_id\": 1,\n            \"title\": \"Finish Assessment\",\n            \"description\": \"Laravel assessment\",\n            \"priority\": \"medium\",\n            \"status\": \"todo\",\n            \"due_date\": null,\n            \"created_at\": \"2026-08-01T15:27:45.000000Z\",\n            \"updated_at\": \"2026-08-01T15:27:45.000000Z\"\n        }\n    ],\n    \"meta\": {\n        \"current_page\": 1,\n        \"last_page\": 1,\n        \"per_page\": 10,\n        \"total\": 2,\n        \"from\": 1,\n        \"to\": 2\n    },\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/v1/tasks?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/v1/tasks?page=1\",\n        \"prev\": null,\n        \"next\": null\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "List Tasks Filter by Status",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/tasks?status=todo",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tasks"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "todo",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List Tasks Filter by Status",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/tasks?status=todo",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "tasks"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "todo",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:30:36 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:30:36 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Tasks retrieved successfully.\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"project_id\": 1,\n            \"title\": \"Finish Assessment\",\n            \"description\": \"Laravel assessment\",\n            \"priority\": \"medium\",\n            \"status\": \"todo\",\n            \"due_date\": \"2026-08-01T00:00:00.000000Z\",\n            \"created_at\": \"2026-08-01T15:28:06.000000Z\",\n            \"updated_at\": \"2026-08-01T15:28:06.000000Z\"\n        },\n        {\n            \"id\": 1,\n            \"project_id\": 1,\n            \"title\": \"Finish Assessment\",\n            \"description\": \"Laravel assessment\",\n            \"priority\": \"medium\",\n            \"status\": \"todo\",\n            \"due_date\": null,\n            \"created_at\": \"2026-08-01T15:27:45.000000Z\",\n            \"updated_at\": \"2026-08-01T15:27:45.000000Z\"\n        }\n    ],\n    \"meta\": {\n        \"current_page\": 1,\n        \"last_page\": 1,\n        \"per_page\": 10,\n        \"total\": 2,\n        \"from\": 1,\n        \"to\": 2\n    },\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/v1/tasks?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/v1/tasks?page=1\",\n        \"prev\": null,\n        \"next\": null\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "List Tasks Filter by Priority",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/tasks?priority=medium",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tasks"
+              ],
+              "query": [
+                {
+                  "key": "priority",
+                  "value": "medium"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List Tasks Filter by Priority",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/tasks?priority=medium",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "tasks"
+                  ],
+                  "query": [
+                    {
+                      "key": "priority",
+                      "value": "medium"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:31:55 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:31:55 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Tasks retrieved successfully.\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"project_id\": 1,\n            \"title\": \"Finish Assessment\",\n            \"description\": \"Laravel assessment\",\n            \"priority\": \"medium\",\n            \"status\": \"todo\",\n            \"due_date\": \"2026-08-01T00:00:00.000000Z\",\n            \"created_at\": \"2026-08-01T15:28:06.000000Z\",\n            \"updated_at\": \"2026-08-01T15:28:06.000000Z\"\n        },\n        {\n            \"id\": 1,\n            \"project_id\": 1,\n            \"title\": \"Finish Assessment\",\n            \"description\": \"Laravel assessment\",\n            \"priority\": \"medium\",\n            \"status\": \"todo\",\n            \"due_date\": null,\n            \"created_at\": \"2026-08-01T15:27:45.000000Z\",\n            \"updated_at\": \"2026-08-01T15:27:45.000000Z\"\n        }\n    ],\n    \"meta\": {\n        \"current_page\": 1,\n        \"last_page\": 1,\n        \"per_page\": 10,\n        \"total\": 2,\n        \"from\": 1,\n        \"to\": 2\n    },\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/v1/tasks?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/v1/tasks?page=1\",\n        \"prev\": null,\n        \"next\": null\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Search by Title",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/tasks?search=Finish",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tasks"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "Finish"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Search by Title",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/tasks?search=Finish",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "tasks"
+                  ],
+                  "query": [
+                    {
+                      "key": "search",
+                      "value": "Finish"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:33:11 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:33:11 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Tasks retrieved successfully.\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"project_id\": 1,\n            \"title\": \"Finish Assessment\",\n            \"description\": \"Laravel assessment\",\n            \"priority\": \"medium\",\n            \"status\": \"todo\",\n            \"due_date\": \"2026-08-01T00:00:00.000000Z\",\n            \"created_at\": \"2026-08-01T15:28:06.000000Z\",\n            \"updated_at\": \"2026-08-01T15:28:06.000000Z\"\n        },\n        {\n            \"id\": 1,\n            \"project_id\": 1,\n            \"title\": \"Finish Assessment\",\n            \"description\": \"Laravel assessment\",\n            \"priority\": \"medium\",\n            \"status\": \"todo\",\n            \"due_date\": null,\n            \"created_at\": \"2026-08-01T15:27:45.000000Z\",\n            \"updated_at\": \"2026-08-01T15:27:45.000000Z\"\n        }\n    ],\n    \"meta\": {\n        \"current_page\": 1,\n        \"last_page\": 1,\n        \"per_page\": 10,\n        \"total\": 2,\n        \"from\": 1,\n        \"to\": 2\n    },\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/v1/tasks?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/v1/tasks?page=1\",\n        \"prev\": null,\n        \"next\": null\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Task",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "_method",
+                  "value": "PUT",
+                  "type": "text",
+                  "uuid": "d5d8551c-e0f4-4dd2-8e96-6568afba4d19"
+                },
+                {
+                  "key": "title",
+                  "value": "update task info",
+                  "type": "text",
+                  "uuid": "fdaff742-e1a7-4b82-8961-3b56359547ce"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/tasks/:task_id",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tasks",
+                ":task_id"
+              ],
+              "variable": [
+                {
+                  "key": "task_id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Update Task",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "_method",
+                      "value": "PUT",
+                      "type": "text",
+                      "uuid": "d5d8551c-e0f4-4dd2-8e96-6568afba4d19"
+                    },
+                    {
+                      "key": "title",
+                      "value": "update task info",
+                      "type": "text",
+                      "uuid": "fdaff742-e1a7-4b82-8961-3b56359547ce"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/tasks/:task_id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "tasks",
+                    ":task_id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "task_id",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:35:38 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:35:38 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Task updated successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"project_id\": 1,\n        \"title\": \"update task info\",\n        \"description\": \"Laravel assessment\",\n        \"priority\": \"medium\",\n        \"status\": \"todo\",\n        \"due_date\": null,\n        \"created_at\": \"2026-08-01T15:27:45.000000Z\",\n        \"updated_at\": \"2026-08-01T15:35:38.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Task",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{authToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "_method",
+                  "value": "PUT",
+                  "type": "text",
+                  "uuid": "d5d8551c-e0f4-4dd2-8e96-6568afba4d19"
+                },
+                {
+                  "key": "title",
+                  "value": "update task info",
+                  "type": "text",
+                  "uuid": "fdaff742-e1a7-4b82-8961-3b56359547ce"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/tasks/:task_id",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tasks",
+                ":task_id"
+              ],
+              "variable": [
+                {
+                  "key": "task_id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Task",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "_method",
+                      "value": "PUT",
+                      "type": "text",
+                      "uuid": "d5d8551c-e0f4-4dd2-8e96-6568afba4d19"
+                    },
+                    {
+                      "key": "title",
+                      "value": "update task info",
+                      "type": "text",
+                      "uuid": "fdaff742-e1a7-4b82-8961-3b56359547ce"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/tasks/:task_id",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "tasks",
+                    ":task_id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "task_id",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:37:12 GMT"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 01 Aug 2026 15:37:12 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.2.0"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Task deleted successfully.\",\n    \"data\": null\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
