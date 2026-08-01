@@ -17,7 +17,9 @@ class ProjectController extends Controller
     public function __construct(
         protected ProjectService $service
     ) {}
-
+    /**
+     * Display a listing of the resource.
+     */
     public function index(): JsonResponse
     {
         $projects = $this->service->list(auth()->id());
@@ -27,7 +29,9 @@ class ProjectController extends Controller
             'Projects retrieved successfully.'
         );
     }
-
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(StoreProjectRequest $request): JsonResponse
     {
         $project = $this->service->create(
@@ -41,7 +45,9 @@ class ProjectController extends Controller
             status: 201
         );
     }
-
+    /**
+     * Display the specified resource.
+     */
     public function show(int $project): JsonResponse
     {
         $project = $this->service->find(
@@ -54,7 +60,9 @@ class ProjectController extends Controller
             message: 'Project retrieved successfully.'
         );
     }
-
+    /**
+     * Update the specified resource in storage.
+     */
     public function update(
         UpdateProjectRequest $request,
         int $project
@@ -75,7 +83,9 @@ class ProjectController extends Controller
             message: 'Project updated successfully.'
         );
     }
-
+    /**
+     * Remove the specified resource from storage.
+     */
     public function destroy(int $project): JsonResponse
     {
         $project = $this->service->find(
