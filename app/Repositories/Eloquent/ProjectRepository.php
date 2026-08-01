@@ -31,7 +31,7 @@ class ProjectRepository implements ProjectRepositoryInterface
         int $id,
         int $userId
     ): Project {
-        return $this->model
+        return $this->model->with('tasks')
             ->where('user_id', $userId)
             ->findOrFail($id);
     }

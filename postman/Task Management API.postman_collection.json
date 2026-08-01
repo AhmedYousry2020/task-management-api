@@ -834,7 +834,8 @@
               {
                 "key": "Content-Type",
                 "value": "application/json",
-                "type": "text"
+                "type": "text",
+                "disabled": true
               },
               {
                 "key": "Accept",
@@ -868,7 +869,8 @@
                   {
                     "key": "Content-Type",
                     "value": "application/json",
-                    "type": "text"
+                    "type": "text",
+                    "disabled": true
                   },
                   {
                     "key": "Accept",
@@ -903,11 +905,11 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Fri, 31 Jul 2026 22:57:31 GMT"
+                  "value": "Sat, 01 Aug 2026 17:31:28 GMT"
                 },
                 {
                   "key": "Date",
-                  "value": "Fri, 31 Jul 2026 22:57:31 GMT"
+                  "value": "Sat, 01 Aug 2026 17:31:28 GMT"
                 },
                 {
                   "key": "Connection",
@@ -931,7 +933,7 @@
                 }
               ],
               "cookie": [],
-              "body": "{\n    \"success\": true,\n    \"message\": \"Project retrieved successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"todo project\",\n        \"description\": \"project description\",\n        \"status\": \"active\",\n        \"created_at\": \"2026-07-31T22:48:47.000000Z\",\n        \"updated_at\": \"2026-07-31T22:48:47.000000Z\"\n    }\n}"
+              "body": "{\n    \"success\": true,\n    \"message\": \"Project retrieved successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"doloribus enim ex\",\n        \"description\": \"Aliquam quia illo facilis error deleniti saepe autem.\",\n        \"status\": \"active\",\n        \"created_at\": \"2026-08-01T16:05:24.000000Z\",\n        \"updated_at\": \"2026-08-01T16:05:24.000000Z\",\n        \"tasks\": [\n            {\n                \"id\": 1,\n                \"project_id\": 1,\n                \"title\": \"Magnam consequatur dolor eligendi.\",\n                \"description\": \"Aut et qui eum ex. Enim quaerat reprehenderit ut modi eius sit laboriosam. Asperiores voluptas sit odit est commodi est repellendus. Magnam id quidem tempore harum non. Quae molestiae saepe velit non velit explicabo nulla.\",\n                \"priority\": \"high\",\n                \"status\": \"todo\",\n                \"due_date\": \"2026-08-19T00:00:00.000000Z\",\n                \"created_at\": \"2026-07-07T16:05:24.000000Z\",\n                \"updated_at\": \"2026-08-01T16:05:24.000000Z\"\n            },\n            {\n                \"id\": 2,\n                \"project_id\": 1,\n                \"title\": \"Porro nemo molestiae dolor.\",\n                \"description\": \"Neque odit et quasi magni. Nobis dolorum iusto quibusdam quis omnis vero magnam aut. Autem suscipit vel doloremque id. Esse qui sed sit qui velit.\",\n                \"priority\": \"low\",\n                \"status\": \"in_progress\",\n                \"due_date\": \"2026-08-13T00:00:00.000000Z\",\n                \"created_at\": \"2026-08-01T16:05:25.000000Z\",\n                \"updated_at\": \"2026-08-01T16:05:25.000000Z\"\n            },\n            {\n                \"id\": 3,\n                \"project_id\": 1,\n                \"title\": \"Qui corporis impedit asperiores.\",\n                \"description\": \"Sed quam quaerat et aut. Provident voluptatem ut consequuntur eos nihil explicabo et expedita. Tempore in amet porro facere possimus sit. Vitae id vel ad necessitatibus eum qui.\",\n                \"priority\": \"high\",\n                \"status\": \"in_progress\",\n                \"due_date\": \"2026-08-19T00:00:00.000000Z\",\n                \"created_at\": \"2026-08-01T16:05:25.000000Z\",\n                \"updated_at\": \"2026-08-01T16:05:25.000000Z\"\n            },\n            {\n                \"id\": 4,\n                \"project_id\": 1,\n                \"title\": \"Ratione et quis.\",\n                \"description\": \"Et iste deleniti laboriosam est sed. Labore illo et vero ab animi. Vel et enim non distinctio accusantium consectetur.\",\n                \"priority\": \"high\",\n                \"status\": \"todo\",\n                \"due_date\": \"2026-08-17T00:00:00.000000Z\",\n                \"created_at\": \"2026-08-01T16:05:25.000000Z\",\n                \"updated_at\": \"2026-08-01T16:05:25.000000Z\"\n            },\n            {\n                \"id\": 5,\n                \"project_id\": 1,\n                \"title\": \"Beatae ab ducimus et.\",\n                \"description\": \"Voluptates eveniet vel similique mollitia expedita. Repellendus recusandae blanditiis aut sunt. Quibusdam nulla eius totam et et.\",\n                \"priority\": \"medium\",\n                \"status\": \"in_progress\",\n                \"due_date\": \"2026-08-28T00:00:00.000000Z\",\n                \"created_at\": \"2026-08-01T16:05:25.000000Z\",\n                \"updated_at\": \"2026-08-01T16:05:25.000000Z\"\n            },\n            {\n                \"id\": 6,\n                \"project_id\": 1,\n                \"title\": \"Enim sit ut recusandae dolorem.\",\n                \"description\": \"Maxime doloribus quisquam voluptatem ut aperiam. Qui sed soluta totam voluptatem. Et dicta et a magnam sapiente eos.\",\n                \"priority\": \"low\",\n                \"status\": \"todo\",\n                \"due_date\": \"2026-07-26T00:00:00.000000Z\",\n                \"created_at\": \"2026-08-01T16:05:25.000000Z\",\n                \"updated_at\": \"2026-08-01T16:59:31.000000Z\"\n            },\n            {\n                \"id\": 7,\n                \"project_id\": 1,\n                \"title\": \"Ut ut temporibus.\",\n                \"description\": \"Error quasi consequatur facilis qui veritatis tempore. Odit excepturi illum laudantium id molestias.\",\n                \"priority\": \"medium\",\n                \"status\": \"in_progress\",\n                \"due_date\": \"2026-08-24T00:00:00.000000Z\",\n                \"created_at\": \"2026-08-01T16:05:25.000000Z\",\n                \"updated_at\": \"2026-08-01T16:05:25.000000Z\"\n            },\n            {\n                \"id\": 8,\n                \"project_id\": 1,\n                \"title\": \"Molestiae dolore quia.\",\n                \"description\": \"Voluptatibus voluptatem error beatae et explicabo eaque. Repellat inventore corporis dolore placeat dolorem dolore. Et consequatur porro sit. Aperiam autem soluta voluptatem aut expedita.\",\n                \"priority\": \"low\",\n                \"status\": \"in_progress\",\n                \"due_date\": \"2026-08-26T00:00:00.000000Z\",\n                \"created_at\": \"2026-08-01T16:05:25.000000Z\",\n                \"updated_at\": \"2026-08-01T16:05:25.000000Z\"\n            },\n            {\n                \"id\": 9,\n                \"project_id\": 1,\n                \"title\": \"Qui excepturi nulla.\",\n                \"description\": \"Et quae atque est inventore cumque. Iste doloribus et qui ducimus. Et ut et illum repudiandae adipisci voluptatum expedita.\",\n                \"priority\": \"low\",\n                \"status\": \"todo\",\n                \"due_date\": \"2026-08-26T00:00:00.000000Z\",\n                \"created_at\": \"2026-08-01T16:05:25.000000Z\",\n                \"updated_at\": \"2026-08-01T16:05:25.000000Z\"\n            },\n            {\n                \"id\": 10,\n                \"project_id\": 1,\n                \"title\": \"In rerum laboriosam.\",\n                \"description\": \"Similique eos totam et et. Est optio odio libero sed dolorem et pariatur atque. Explicabo et quia deserunt.\",\n                \"priority\": \"high\",\n                \"status\": \"todo\",\n                \"due_date\": \"2026-07-30T00:00:00.000000Z\",\n                \"created_at\": \"2026-08-01T16:05:25.000000Z\",\n                \"updated_at\": \"2026-08-01T16:59:31.000000Z\"\n            }\n        ]\n    }\n}"
             }
           ]
         },
