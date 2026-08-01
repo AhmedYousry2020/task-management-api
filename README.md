@@ -96,6 +96,23 @@ php artisan serve
 
 ---
 
+## Import Postman Collection
+
+A ready-to-use Postman collection is included with the project.
+
+Import the following file into Postman:
+
+postman/Task Management API.postman_collection.json
+
+After importing the collection:
+
+Set the base_url variable (e.g. http://127.0.0.1:8000/api/v1).
+Send the Login request.
+Copy the returned access token.
+Set the token variable with the returned Bearer token.
+You can now test all authenticated endpoints.
+
+---
 # Authentication
 
 ## Register
